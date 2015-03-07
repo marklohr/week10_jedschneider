@@ -1,0 +1,12 @@
+<h1>Edit Project</h1>
+
+<%= link_to "Home", root_path %>
+<br><br>
+
+<%= form_for @project do |f| %>
+  <b><%= f.label :name %></b>:
+  <%= f.text_field :name %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
